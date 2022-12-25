@@ -3,6 +3,8 @@ module.exports = {
     NODE_ENV: '"production"'
   },
   defineConstants: {
+    REQUEST_URL: JSON.stringify('http://localhost:3000'),
+    PRODUCTION: JSON.stringify(true),
   },
   mini: {},
   h5: {

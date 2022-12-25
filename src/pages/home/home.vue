@@ -1,12 +1,21 @@
 <template>
-  <view>
-    <text>{{ msg }}</text>
-  </view>
+  <view> 111 </view>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import './home.scss'
+import { getMvDataList } from '@/service/home';
+import { useLoad } from '@tarojs/taro';
 
-const msg = ref('什么啊');
+useLoad(() => {
+  init();
+});
+
+const init = async () => {
+  const result = await getMvDataList();
+  console.log(result);
+};
 </script>
+
+<style lang="scss">
+// import './home.scss';
+</style>
