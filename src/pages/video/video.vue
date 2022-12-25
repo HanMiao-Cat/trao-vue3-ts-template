@@ -1,7 +1,7 @@
 <template>
   <view>
-		<text>{{ msg }}</text>
-	</view>
+    <text>{{ msg }}</text>
+  </view>
 </template>
 
 <script lang="ts" setup>

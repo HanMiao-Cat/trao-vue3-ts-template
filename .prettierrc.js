@@ -8,5 +8,5 @@ module.exports = {
   jsxBracketSameLine: false, // html 关闭标签换行
   arrowParens: 'avoid', // 单参数的箭头函数参数不需要括号
   proseWrap: 'never', // markdown文档不换行
-  trailingComma: 'all' // 结尾处不加逗号
+  trailingComma: 'all' // 结尾处添加逗号
 };

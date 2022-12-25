@@ -30,6 +30,5 @@
     "@typescript-eslint/no-explicit-any": "off",
     "vue/multi-word-component-names": "off",
     "vue/no-multiple-template-root": "off" // 不需要使用根元素包裹template的内容
-  },
-  "requireConfigFile": false
+  }
 }

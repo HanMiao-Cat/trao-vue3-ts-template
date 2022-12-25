@@ -19,7 +19,9 @@ import {
 import './app.scss';
 
 const App = createApp({
-  onShow() {},
+  onShow() {
+    console.log('onShow');
+  },
 });
 
 App.use(createPinia())
