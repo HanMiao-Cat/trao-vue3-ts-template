@@ -13,7 +13,10 @@
     "prd:weapp": "npm run build:prd:weapp -- --watch",
     "build:dev:weapp": "taro build --type weapp --env development",
     "build:prd:weapp": "taro build --type weapp --env production",
-    "lint-staged": "lint-staged",
+    "lint:lint-staged": "lint-staged",
+    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx,.vue src/",
+    "fix:eslint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src/",
+    "fix:prettier": "prettier --write  \"src/**/*.{css,scss,html,json}\"",
     "commit": "cz",
     "prepare": "husky install"
   },

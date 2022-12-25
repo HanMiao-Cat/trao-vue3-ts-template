@@ -1,18 +1,35 @@
 // ESLint 检查 .vue 文件需要单独配置编辑器：
 // https://eslint.vuejs.org/user-guide/#editor-integrations
 {
+  "env": {
+    "es2021": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "parser": "vue-eslint-parser",
   "extends": [
     "taro/vue3",
-    "plugin:vue/essential",
-    "eslint:recommended",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-recommended",
+    "prettier"
   ],
   "parserOptions": {
-    "parser": "@babel/eslint-parser"
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
   },
+  "plugins": [
+    "vue",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
+    "prettier/prettier": "error",
+    "vue/valid-v-for": "off",
+    "vue/require-v-for-key": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "vue/multi-word-component-names": "off",
-    "vue/no-multiple-template-root": 0 // 不需要使用根元素包裹template的内容
+    "vue/no-multiple-template-root": "off" // 不需要使用根元素包裹template的内容
   },
   "requireConfigFile": false
 }
