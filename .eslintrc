@@ -24,11 +24,12 @@
     "prettier"
   ],
   "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
     "prettier/prettier": "error",
+    // v-for不需要key
     "vue/valid-v-for": "off",
     "vue/require-v-for-key": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "vue/multi-word-component-names": "off",
+    "vue/multi-word-component-names": "off",  // 不需要组件名称
     "vue/no-multiple-template-root": "off" // 不需要使用根元素包裹template的内容
   }
 }

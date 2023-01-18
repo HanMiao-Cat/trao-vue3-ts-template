@@ -23,14 +23,12 @@
       "node_modules/@types"
     ]
   },
+  "types": ["@tarojs/components/vue3"],
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.d.ts",
     "./types"
-  ],
-  "exclude": [
-    ".plop/*"
   ],
 }

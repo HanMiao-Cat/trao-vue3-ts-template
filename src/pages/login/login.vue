@@ -1,12 +1,8 @@
 <template>
-  <view> 111 </view>
+  <view> </view>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
-
-const count = ref(100);
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss">
 @import './login.scss';

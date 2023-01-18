@@ -24,20 +24,27 @@ const App = createApp({
   },
 });
 
-App.use(createPinia())
-  .use(Button)
-  .use(Toast)
-  .use(InputNumber)
-  .use(Icon)
-  .use(Cell)
-  .use(CellGroup)
-  .use(Collapse)
-  .use(CollapseItem)
-  .use(Switch)
-  .use(CountDown)
-  .use(Dialog)
-  .use(Popup)
-  .use(OverLay)
-  .use(Empty);
+const NutUiComponents = [
+  Button,
+  Toast,
+  InputNumber,
+  Icon,
+  Cell,
+  CellGroup,
+  Collapse,
+  CollapseItem,
+  Switch,
+  CountDown,
+  Dialog,
+  Popup,
+  OverLay,
+  Empty,
+];
+
+NutUiComponents.forEach(item => {
+  App.use(item);
+});
+
+App.use(createPinia());
 
 export default App;
